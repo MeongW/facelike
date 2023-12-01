@@ -1,0 +1,38 @@
+    html {
+    /* 전체 영역 */
+    background-image: url("../image/animal.jpg");
+    display: flex;
+    align-items: center;
+  }
+  
+  body {
+    /* 화면 영역  */
+    position: relative;
+    text-align: center;
+    width: 700px;
+    height: 800px;
+    margin: 0 auto;
+    font-weight: 1000;
+  }
+
+  h1{
+    margin-top: 10%;
+    font-size: 50px;
+    font-family: "Last Ninja", Impact, fantasy;
+    color: rgb(80, 80, 241);
+    text-shadow: 2px 2px 4px rgb(63, 63, 63);
+  }
+
+  #firstBtn{
+    background-image: url("../image/start.png");
+    background-size: cover; 
+    width: 400px;
+    height: 102px;
+    background-color: transparent;
+    border-width: 0px;
+    margin-top: 5%;
+  }
+  
+#firstBtn:hover {
+    cursor: pointer;
+  }
