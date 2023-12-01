@@ -21,6 +21,9 @@ h1{
     -webkit-text-stroke: 1px black;
     color: rgb(68, 150, 235);
     text-shadow: 2px 2px 2px rgb(200 ,200 ,200);
+}
+
+#title-container {   
     background-image: url("../image/title.png");
 }
 
