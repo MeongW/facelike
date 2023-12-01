@@ -72,7 +72,7 @@ async function predict() {
         else if (prediction[i].className == "rabbit"){
             classPrediction += "토끼상";
         }
-        classPrediction += " : " + parseInt(prediction[i].probability.toFixed(2)*100) + "%</p>";
+        classPrediction += " : " + parseInt(prediction[i].probability.toFixed(2)*100) + "%</div>";
         labelContainer.childNodes[i].innerHTML = classPrediction + pg_bar[i] + "<br>";
     }
 }
