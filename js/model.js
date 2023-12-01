@@ -11,6 +11,7 @@ async function init() {
     const modelURL = URL + "model.json";
     const metadataURL = URL + "metadata.json";
     
+
     if (webcam) {
         return;
     }
@@ -31,6 +32,7 @@ async function init() {
 
     // append elements to the DOM
     document.getElementById("webcam-container").appendChild(webcam.canvas);
+    document.getElementById("firstBtn").style.display = "none";
     labelContainer = document.getElementById("label-container");
     for (let i = 0; i < maxPredictions; i++) { // and class labels
         labelContainer.appendChild(document.createElement("div"));
