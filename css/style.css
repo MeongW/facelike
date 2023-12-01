@@ -23,7 +23,8 @@ h1{
     text-shadow: 2px 2px 2px rgb(200 ,200 ,200);
 }
 
-#title-container {   
+#title-container {
+    margin-top: 5%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
