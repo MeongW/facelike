@@ -25,8 +25,9 @@
 
   #firstBtn{
     background-image: url("../image/start.png");
-    background-size: cover; 
-    width: 400px;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    width: 350px;
     height: 102px;
     background-color: transparent;
     border-width: 0px;
