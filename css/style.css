@@ -1,5 +1,6 @@
 html {
     /* 전체 영역 */
+    flex-direction: column;
     background-image: url("../image/animal.jpg");
     display: flex;
     align-items: center;
@@ -73,8 +74,8 @@ a{
 #makers-container {
     padding: 10%;
     margin-top: 10%;
-    width: 100%;
-    height: 60%;
+    width: 80%;
+    height: 45%;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 20px;
     text-align-last: justify;
