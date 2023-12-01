@@ -59,18 +59,18 @@ async function predict() {
         pg_bar[i]=`<div>
             <progress value="` + prediction[i].probability.toFixed(2) + `" max="1"></progress>
         </div>`
-        let classPrediction = "";
+        let classPrediction = "<div class='result-container'>";
         if (prediction[i].className == "cat") {
-            classPrediction = "고양이상";
+            classPrediction += "고양이상";
         }
         else if (prediction[i].className == "dog"){
-            classPrediction = "강아지상";
+            classPrediction += "강아지상";
         }
         else if (prediction[i].className == "fox"){
-            classPrediction = "여우상";
+            classPrediction += "여우상";
         }
         else if (prediction[i].className == "rabbit"){
-            classPrediction = "<div class='result-container'>토끼상";
+            classPrediction += "토끼상";
         }
         classPrediction += " : " + parseInt(prediction[i].probability.toFixed(2)*100) + "%</p>";
         labelContainer.childNodes[i].innerHTML = classPrediction + pg_bar[i] + "<br>";
