@@ -2,26 +2,27 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>나는 무슨 동물형?</title>
+    <title>나는 무슨 동물형?</title><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <h1>나는 무슨 동물형?</h1>
+    <h1>나는 무슨 동물상?</h1>
     <br>
     <div id="webcam-container"></div>
     <br><br>
     <div id="label-container"></div>
     <button id="firstBtn" type="button" onclick="init()"></button>
-        
-    <div class="container" id="loading">
+    <div id="loading-container">
         <i class="fas fa-spinner fa-6x fa-spin"></i>
     </div>
 </body>
+
 
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
 <script src="./js/model.js"></script>
-    
 </html>
