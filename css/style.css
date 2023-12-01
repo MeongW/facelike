@@ -25,6 +25,7 @@ h1{
 
 #title-container {   
     background-image: url("../image/title.png");
+    background-size: cover;
 }
 
 #firstBtn{
