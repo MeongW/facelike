@@ -72,6 +72,11 @@ a{
 
 #makers-container {
     margin-top: 10%;
+    width: 90%;
+    height: 70%;
+    background-color: #FFFFFF;
+    opacity: 0.6;
+    border-radius: 20px;
 }
 
 p {   
