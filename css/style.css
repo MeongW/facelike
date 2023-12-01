@@ -1,29 +1,29 @@
-    html {
+html {
     /* 전체 영역 */
     background-image: url("../image/animal.jpg");
     display: flex;
     align-items: center;
-  }
-  
-  body {
-    /* 화면 영역  */
+}
+
+body {
+    /* 화면 영역 */
     position: relative;
     text-align: center;
     width: 700px;
     height: 800px;
     margin: 0 auto;
-  }
+}
 
-  h1{
+h1{
     margin-top: 10%;
     font-size: 45px;
     font-family: 'Jua', sans-serif;
     -webkit-text-stroke: 1px black;
     color: rgb(68, 150, 235);
     text-shadow: 2px 2px 2px rgb(200 ,200 ,200);
-  }
+}
 
-  #firstBtn{
+#firstBtn{
     background-image: url("../image/start.png");
     background-size: contain; 
     background-repeat: no-repeat;
@@ -32,7 +32,7 @@
     background-color: transparent;
     border-width: 0px;
     margin-top: 5%;
-  }
+}
   
 #firstBtn:hover {
   cursor: pointer;
