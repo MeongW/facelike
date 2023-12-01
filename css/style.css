@@ -24,6 +24,7 @@ h1{
 }
 
 #firstBtn{
+    text-align: center;
     background-image: url("../image/start.png");
     background-size: contain; 
     background-repeat: no-repeat;
