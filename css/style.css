@@ -62,3 +62,8 @@ h1{
     font-weight: 700;
     color: #1E1E1E;
 }
+
+#maker-container {
+    align-self: end;
+    justify-content: flex-end;
+}
