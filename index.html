@@ -1,13 +1,20 @@
-<html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나는 무슨 동물형?</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-<button type="button" onclick="init()">Start</button>
-<br>
-<div id="webcam-container"></div>
-<br><br>
-<div id="label-container"></div>
+    <h1>나는 무슨 동물형?</h1>
+    <br>
+    <div id="webcam-container"></div>
+    <br><br>
+    <div id="label-container"></div>
+    <button id="firstBtn" type="button" onclick="init()"></button>
+</body>
+
+
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
 <script type="text/javascript">
@@ -23,6 +30,10 @@
     async function init() {
         const modelURL = URL + "model.json";
         const metadataURL = URL + "metadata.json";
+        
+        if (webcam) {
+            return;
+        }
 
         // load the model and metadata
         // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
@@ -61,11 +72,21 @@
             pg_bar[i]=`<div>
                 <progress value="` + prediction[i].probability.toFixed(2) + `" max="1"></progress>
             </div>`
-            const classPrediction =
-                prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+            let classPrediction = "";
+            if (prediction[i].className == "cat") {
+                classPrediction = "고양이상";
+            }
+            else if (prediction[i].className == "dog"){
+                classPrediction = "강아지상";
+            }
+            else if (prediction[i].className == "fox"){
+                classPrediction = "여우상";
+            }
+            else if (prediction[i].className == "rabbit"){
+                classPrediction = "토끼상";
+            }
+            classPrediction += ": " + parseInt(prediction[i].probability.toFixed(2)*100) + "%";
             labelContainer.childNodes[i].innerHTML = pg_bar[i] + classPrediction;
         }
     }
 </script>
-</body>
-</html>
