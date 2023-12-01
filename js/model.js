@@ -16,6 +16,9 @@ async function init() {
         return;
     }
 
+    document.getElementById("firstBtn").style.display = "none";
+    document.getElementById("loading").style.display = "block";
+
     // load the model and metadata
     // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
     // or files from your local hard drive
@@ -30,9 +33,11 @@ async function init() {
     await webcam.play();
     window.requestAnimationFrame(loop);
 
+    
+    document.getElementById("loading").style.display = "none";
     // append elements to the DOM
     document.getElementById("webcam-container").appendChild(webcam.canvas);
-    document.getElementById("firstBtn").style.display = "none";
+    
     labelContainer = document.getElementById("label-container");
     for (let i = 0; i < maxPredictions; i++) { // and class labels
         labelContainer.appendChild(document.createElement("div"));
