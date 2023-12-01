@@ -17,7 +17,7 @@ async function init() {
     }
 
     document.getElementById("firstBtn").style.display = "none";
-    document.getElementById("loading").style.display = "block";
+    document.getElementById("loading-container").style.display = "block";
 
     // load the model and metadata
     // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
@@ -34,7 +34,7 @@ async function init() {
     window.requestAnimationFrame(loop);
 
     
-    document.getElementById("loading").style.display = "none";
+    document.getElementById("loading-container").style.display = "none";
     // append elements to the DOM
     document.getElementById("webcam-container").appendChild(webcam.canvas);
     
