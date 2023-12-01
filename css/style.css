@@ -12,9 +12,6 @@
     width: 700px;
     height: 800px;
     margin: 0 auto;
-    font-family: 'Jua', sans-serif;
-    font-weight: 1000;
-    color: #1E1E1E;
   }
 
   h1{
@@ -48,4 +45,10 @@
   justify-content: center;
   align-items: center;
   display: none;
+}
+
+#result-container {
+    font-family: 'Jua', sans-serif;
+    font-weight: 1000;
+    color: #1E1E1E;
 }
